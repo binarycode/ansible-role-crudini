@@ -1,0 +1,5 @@
+---
+- name: Install crudini package.
+  yum:
+    name:  crudini
+    state: present

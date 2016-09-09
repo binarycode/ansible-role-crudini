@@ -1,0 +1,5 @@
+---
+- name: Install crudini package.
+  apt:
+    name:  crudini
+    state: present
