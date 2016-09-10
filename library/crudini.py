@@ -29,7 +29,7 @@ def main():
     changed = False
 
     for key, value in config.iteritems():
-        cmd = ' '.join([crudini, '--verbose', '--set', path, key, value])
+        cmd = ' '.join([crudini, '--verbose', '--set', path, key, '"' + str(value) + '"'])
 
         (rc, stdout, stderr) = module.run_command(cmd, check_rc=True, use_unsafe_shell=True)
 
